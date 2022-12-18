@@ -7,21 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		725B57D2294CE8B800E2BE34 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 725B57D1294CE8B800E2BE34 /* SnapKit */; };
+		725B57D5294D3C2700E2BE34 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B57D4294D3C2700E2BE34 /* UIImage.swift */; };
+		725B57DB294F976800E2BE34 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B57DA294F976800E2BE34 /* TableViewModel.swift */; };
+		725B57DD294FA1C100E2BE34 /* SecondVCContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725B57DC294FA1C100E2BE34 /* SecondVCContainerView.swift */; };
 		72CDB8422947283700B9F169 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB8412947283700B9F169 /* AppDelegate.swift */; };
 		72CDB8442947283700B9F169 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB8432947283700B9F169 /* SceneDelegate.swift */; };
-		72CDB8462947283700B9F169 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB8452947283700B9F169 /* ViewController.swift */; };
+		72CDB8462947283700B9F169 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB8452947283700B9F169 /* TableViewController.swift */; };
 		72CDB84B2947283900B9F169 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72CDB84A2947283900B9F169 /* Assets.xcassets */; };
 		72CDB84E2947283900B9F169 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72CDB84C2947283900B9F169 /* LaunchScreen.storyboard */; };
+		72CDB872294A74B700B9F169 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB871294A74B700B9F169 /* SecondViewController.swift */; };
+		72CDB8B6294CE36600B9F169 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CDB8B5294CE36600B9F169 /* MyTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		725B57D4294D3C2700E2BE34 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		725B57DA294F976800E2BE34 /* TableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		725B57DC294FA1C100E2BE34 /* SecondVCContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVCContainerView.swift; sourceTree = "<group>"; };
 		72CDB83E2947283700B9F169 /* Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72CDB8412947283700B9F169 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72CDB8432947283700B9F169 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72CDB8452947283700B9F169 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72CDB8452947283700B9F169 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		72CDB84A2947283900B9F169 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72CDB84D2947283900B9F169 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72CDB84F2947283900B9F169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72CDB871294A74B700B9F169 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		72CDB8B5294CE36600B9F169 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +40,58 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725B57D2294CE8B800E2BE34 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		725B57D3294D3BDC00E2BE34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				725B57D4294D3C2700E2BE34 /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		725B57D6294F8D5600E2BE34 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				725B57DA294F976800E2BE34 /* TableViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		725B57D7294F8D6000E2BE34 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				72CDB8B5294CE36600B9F169 /* MyTableViewCell.swift */,
+				725B57DC294FA1C100E2BE34 /* SecondVCContainerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		725B57D8294F8D6700E2BE34 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				72CDB8452947283700B9F169 /* TableViewController.swift */,
+				72CDB871294A74B700B9F169 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		725B57D9294F8D8E00E2BE34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				72CDB8412947283700B9F169 /* AppDelegate.swift */,
+				72CDB8432947283700B9F169 /* SceneDelegate.swift */,
+				72CDB84C2947283900B9F169 /* LaunchScreen.storyboard */,
+				72CDB84A2947283900B9F169 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
 		72CDB8352947283700B9F169 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +111,11 @@
 		72CDB8402947283700B9F169 /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
-				72CDB8412947283700B9F169 /* AppDelegate.swift */,
-				72CDB8432947283700B9F169 /* SceneDelegate.swift */,
-				72CDB8452947283700B9F169 /* ViewController.swift */,
-				72CDB84A2947283900B9F169 /* Assets.xcassets */,
-				72CDB84C2947283900B9F169 /* LaunchScreen.storyboard */,
+				725B57D6294F8D5600E2BE34 /* Models */,
+				725B57D7294F8D6000E2BE34 /* Views */,
+				725B57D8294F8D6700E2BE34 /* Controllers */,
+				725B57D3294D3BDC00E2BE34 /* Extensions */,
+				725B57D9294F8D8E00E2BE34 /* Support Files */,
 				72CDB84F2947283900B9F169 /* Info.plist */,
 			);
 			path = Task2;
@@ -80,6 +137,9 @@
 			dependencies = (
 			);
 			name = Task2;
+			packageProductDependencies = (
+				725B57D1294CE8B800E2BE34 /* SnapKit */,
+			);
 			productName = Task2;
 			productReference = 72CDB83E2947283700B9F169 /* Task2.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 72CDB8352947283700B9F169;
+			packageReferences = (
+				725B57D0294CE8B800E2BE34 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 72CDB83F2947283700B9F169 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,8 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72CDB8462947283700B9F169 /* ViewController.swift in Sources */,
+				72CDB872294A74B700B9F169 /* SecondViewController.swift in Sources */,
+				725B57DD294FA1C100E2BE34 /* SecondVCContainerView.swift in Sources */,
+				725B57DB294F976800E2BE34 /* TableViewModel.swift in Sources */,
+				72CDB8462947283700B9F169 /* TableViewController.swift in Sources */,
 				72CDB8422947283700B9F169 /* AppDelegate.swift in Sources */,
+				725B57D5294D3C2700E2BE34 /* UIImage.swift in Sources */,
+				72CDB8B6294CE36600B9F169 /* MyTableViewCell.swift in Sources */,
 				72CDB8442947283700B9F169 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		725B57D0294CE8B800E2BE34 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		725B57D1294CE8B800E2BE34 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 725B57D0294CE8B800E2BE34 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72CDB8362947283700B9F169 /* Project object */;
 }
